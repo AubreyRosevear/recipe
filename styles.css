@@ -247,3 +247,34 @@ main p {
     column-gap: 15px;
     transition: all .5s;
 }
+
+#sides figure:hover {
+    background-color: #7ABFBF;
+    transform: skew(5deg, 5deg);
+}
+
+#sides img {
+    width: 100px;
+    margin: auto;
+    grid-area: a;
+}
+
+#sides figcaption, #sides p, #sides dl {
+    margin: 0;
+}
+
+#sides figcaption {
+    grid-area: b;
+}
+
+#sides p {
+    grid-area: c;
+}
+
+#sides dl {
+    grid-area: d;
+}
+
+#sides dd {
+    margin: 0;
+}
