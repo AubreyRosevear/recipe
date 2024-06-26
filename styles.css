@@ -104,3 +104,22 @@ nav ul li {
     transition: all .2s;
 }
 
+nav ul li:hover {
+    color: white;
+    background-color: #EB5428;
+    transform: scale(1.2, 1.2);
+}
+
+nav ul li svg {
+    transition: all .2s;
+}
+
+nav ul li svg:hover {
+    stroke: #F2F2F2;
+    transform: scale(1.2, 1.2);
+}
+
+nav ul li:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
