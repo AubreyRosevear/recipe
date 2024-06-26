@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swapp");
 
-/* Main Styles */
+/* Main Style */
 html {
     box-sizing: border-box;
 }
@@ -22,94 +22,7 @@ p, p1, p2 {
 }
 
 /*Navigation*/
-#main-nav {
-    width: 414px;
-    height: 125px;
-    margin-top: -40px;
-    background-color: #FFFFFF;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    text-transform: uppercase;
-    font-size: 20px;
-}
 
-#main-nav h2 {
-    visibility: hidden;
-    height: 1px;
-}
-
-#mainNav li {
-    list-style: none;
-    text-align: center;
-    text-transform: uppercase;
-    color: #EB5428;
-}
-
-#mainNav a {
-    text-decoration: none;
-    color: #EB5428;
-}
-
-#mainNav ul{
-    margin: 0;
-    padding: 0;
-    max-height: 0px;
-    color: #EB5428;
-    overflow: hidden; 
-    transition: max-height .2s ease-out;  
-}
- 
-#main-nav ul {
-    text-align: center;
-    background-color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-} 
- 
-#main-nav li a {
-    display: block;
-    padding: 20px 20px;
-    margin-bottom: 2px;
-    text-decoration: none;
-    color: #EB5428;
-}
-
-#main-nav label span:before, #main-nav label span:after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-#main-nav label span:before {
-    top: 5px;
-}
-
-#main-nav label span:after {
-    top: -5px;
-}
-
-#main-nav input {
-    display: none;
-}
-
-#main-nav input:checked ~ ul {
-    max-height: 500px;
-}
-
-#main-nav input:checked ~ label span {
-    background: transparent;
-}
-
-#main-nav input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
-    top: 0;
-}
 
 [href="#home"] {
     position: absolute;
@@ -525,15 +438,4 @@ footer p {
     padding: 0;
     top: -460px;
     left: 320px;
-}
-
-/*Media Query Styles*/
-
-@media screen and (max-width:414px) {
-    
-body {
-    width:414px;
-}
-
-.icon icon-tabler icon-tabler-download
 }
