@@ -66,3 +66,28 @@ nav #menuIcon {
     justify-content: center;
     padding: 20px;
 }
+
+#search input {
+    width: 320px;
+    border: 2px solid #Eb5428;
+    grid-row: 1;
+}
+
+#search button {
+    background-color: #Eb5428;
+    border: 2px solid #Eb5428;
+    grid-row: 1;
+}
+
+#search input, #search button {
+    height: 45px;
+    margin: 0;
+}
+
+nav #menuIcon:checked ~ nav ul {
+    height: 150px;
+}
+
+nav ul img {
+    width: 40px;
+}
