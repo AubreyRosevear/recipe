@@ -157,9 +157,31 @@ menu {
 }
 
 menu li a {
-
+    color: #Eb5428;
+    transition: all .2s;
 }
 
 menu li a:hover {
-    
+    color: #F2F2F2;
+    background-color: #EB5428;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, figcaption, menu li, #social li, footer {
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: "montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+dt {
+    font-family: "montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
 }
