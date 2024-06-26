@@ -248,7 +248,7 @@ main p {
 }
 
 #sides figure:hover {
-    background-color: #EB5428;
+    background-color: #7ABFBF;
     transform: skew(5deg, 5deg);
 }
 
