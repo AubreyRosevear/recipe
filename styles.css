@@ -27,7 +27,7 @@ p, p1, p2 {
     height: 125px;
     margin-top: -40px;
     background-color: #FFFFFF;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
     text-transform: uppercase;
@@ -305,17 +305,15 @@ main {
     left: 170px;
 }
 
-/*Street Tacos Menus*/
-
 .street-tacos menu {
-    position: relative;
+    position: absolute;
     border-style: solid;
     border-color: #eb5428;
     background-color: white;
     list-style-type: none;
-    top: 200px;
-    width: 380px;
-    height: 100px;
+    top: 350px;
+    width: 100px;
+    height: 580px;
 }
 
 .street-tacos svg {
@@ -329,7 +327,6 @@ main {
     position: relative;
     color: #eb5428;
     left: -40px;
-    display: inline-flex;
 }
 
 .street-tacos h2 {
