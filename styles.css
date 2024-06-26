@@ -185,3 +185,35 @@ dt {
     font-weight: 700;
     font-size: 16px;
 }
+
+[src*="street-tacos"] {
+    width: 414px;
+}
+
+#details dl {
+    margin: 0 10px;
+    line-height: 1.5;
+}
+
+#details dt {
+    display: inline-block;
+}
+
+#details dd {
+    display: inline;
+}
+
+#details dd:after {
+    display: block;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+main p {
+    margin: 5px;
+    line-height: 1.5px;
+}
