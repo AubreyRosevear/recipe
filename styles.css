@@ -623,4 +623,37 @@ footer img {
         display: block;
         content: '';
     }
+    
+    #social {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    #social ul {
+        gap: 72px;
+    }
+
+    footer {
+        position: relative;
+        top: -750px;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 150px 1fr 1fr;
+        padding: 30px 10px;
+    }
+
+    footer img {
+        grid-column: 1;
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    footer small {
+        grid-column: 2;
+        grid-row: 1;
+        padding-top: 25px;
+        padding-left: 25px;
+        text-align: left;;
+    }
 }
