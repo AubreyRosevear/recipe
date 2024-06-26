@@ -54,7 +54,6 @@ nav #menuIcon {
     user-select: none;
 }
 
-
 #search {
     grid-row: 2;
     background-color: #F2F2F2;
@@ -203,7 +202,6 @@ dt {
 
 #details dd:after {
     display: block;
-    content: '';
 }
 
 h2 {
