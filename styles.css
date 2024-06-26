@@ -383,6 +383,65 @@ footer img {
                         "sides sides sides";
     }
 
-    
+    [src*="street-tacos"] {
+        grid-area: img;
+    }
 
+    #tacos {
+        grid-area: tacos;
+    }
+
+    #details {
+        text-align: center;
+        grid-area: details;
+    }
+
+    #details dd {
+        margin: 10px;
+    }
+
+    #ingredients {
+        grid-area: ingredients;
+    }
+
+    #directions {
+        grid-area: directions;
+    }
+
+    #sides {
+        grid-area: sides;
+        height: 350px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-self: stretch;
+    }
+
+    #sides h2 {
+        width: 768px;
+        margin: 0;
+    }
+
+    #sides figure {
+        width: 48%;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 50px;
+        padding-top: 50px;
+    }
+
+    #social {
+        grid-column: 2;
+    }
+
+    footer img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    small {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
