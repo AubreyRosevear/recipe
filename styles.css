@@ -278,3 +278,37 @@ main p {
 #sides dd {
     margin: 0;
 }
+
+#social ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 30px;
+    grid-row: 1;
+}
+
+#social ul li a{
+    text-align: center;
+    color:#EB5428;
+    transition: all .5s;
+}
+
+#social ul li a:hover {
+    color: white;
+    background-color: #EB5428;
+    transform: scale(1.2, 1.2);
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    justify-content: center;
+    text-align: center;
+    row-gap: 25px;
+}
+
+footer img {
+    width: 200px;
+    grid-row: 2;
+    margin: auto;
+}
