@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swapp");
 
+/*Main*/ 
+
 html {
     background-color: rgba(122, 191, 191, .5);
 }
@@ -20,7 +22,19 @@ header {
     top: 0;  
 }
 
+/*Nav stuff*/
 nav {
     grid-template-rows: 1fr 1fr;
     display: grid;
+}
+
+nav ul {
+    width: 414px;
+    height: 80px;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    justify-items: auto;
+    
 }
