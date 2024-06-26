@@ -36,5 +36,33 @@ nav ul {
     margin: 0;
     top: 0;
     justify-items: auto;
-    
+    z-index: 1;
+    grid-row: 1;
+    list-style: none;
+    background-color: white;
+    overflow: hidden;
+    grid-template-rows: 80px 60px;
+    grid-template-columns: repeat (7, 1fr);
+}
+
+nav #menuIcon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+}
+
+#burger {
+    cursor: pointer;
+    user-select: none;
+}
+
+#search {
+    text-align: center;
+    grid-row: 2;
+    background-color: #F2F2F2;
+    display:grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    padding: 20px;
 }
