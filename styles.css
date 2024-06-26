@@ -91,3 +91,16 @@ nav #menuIcon:checked ~ nav ul {
 nav ul img {
     width: 40px;
 }
+
+nav ul a {
+    font-size: 16px;
+}
+
+nav ul li {
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: 10px 0;
+    transition: all .2s;
+}
+
