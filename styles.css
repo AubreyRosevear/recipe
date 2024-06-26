@@ -7,10 +7,9 @@ html {
 
 body {
     margin: 0 auto;
-    background-color: #7abebf;
+    background-color: rgba(122, 191, 191, .5);
     padding: 0;
     width: 1280px;
-    padding: 0;
 }
 
 h1, h2, h3, h4 {
@@ -62,7 +61,7 @@ p, p1, p2 {
     color: #eb5428;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18.5px;
+    font-size: 20px;
 }
 
 .main_nav h2 {
@@ -80,7 +79,7 @@ main {
     background-color: #eb5428;
     position: absolute;
     height: 100px;
-    width: 130px;
+    width: 100px;
     top: -16px;
     left: -214px;
 }
@@ -88,7 +87,7 @@ main {
 .logo svg {
     position: absolute;
     top: 28px;
-    right: 60px;
+    right: 40px;
 }
 
 .logo a {
@@ -110,7 +109,7 @@ main {
 .search {
     position: relative;
     left: 470px;
-    top: -2010px;
+    top: -1950px;
 }
 
 .search input {
@@ -163,7 +162,7 @@ main {
     position: relative;
     top: 180px;
     left: 520px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .street-tacos p {
@@ -189,7 +188,7 @@ main {
 .details h3 {
     position: relative;
     margin: auto;
-    font-size: 35px;
+    font-size: 25px;
     right: -575px;
     top: 32px;
 }
@@ -232,12 +231,12 @@ dd {
 .ingredients li {
     font-family: "Montserrat", sans-serif;
     list-style-type: none;
-    font-size: 16.5px;
+    font-size: 16px;
 }
 
 .ingredients h3 {
     font-family: "Bebas Neue";
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .directions {
@@ -256,7 +255,7 @@ dd {
     position: relative;
     font-family: "Bebas Neue";
     right: -400px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .dishes {
@@ -281,7 +280,7 @@ dd {
     position: relative;
     text-align: center;
     top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -334,7 +333,7 @@ dd {
     color: #eb5428;
     position: relative;
     top: -480px;
-    font-size: 18.5px;
+    font-size: 20px;
 }
 
 footer img {
@@ -351,8 +350,18 @@ footer p {
     margin: auto;    
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18.5px;
+    font-size: 20px;
     padding: 0;
     top: -460px;
     left: 320px;
+}
+
+/*Media Query Styles*/
+
+@media screen and (max-width:768px) {
+    
+body {
+    width:414px;
+}
+
 }
