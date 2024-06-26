@@ -217,3 +217,33 @@ main p {
     margin: 5px;
     line-height: 1.5;
 }
+
+#ingredients ul {
+    list-style: square;
+    line-height: 2;
+}
+
+#directions ol li {
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+#sides {
+    background-color: #7abfbf;
+    display: flex;
+    flex-direction: column;
+}
+
+#sides figure {
+    padding-left: 10px;
+    margin: 25px 0;
+    display: grid;
+    grid-template-areas: 
+                "a b b b"
+                "a c c c"
+                "a d d d";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 33px 33px 33px;
+    column-gap: 15px;
+    transition: all .5s;
+}
