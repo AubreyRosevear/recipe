@@ -456,6 +456,24 @@ footer img {
         height: 2000px;
     }
 
-    
+    menu {
+        display: block;
+        position: relative;
+    }
+
+    h1 {
+        text-align: center;
+        width: 1280px;
+    }
+
+    menu {
+        flex-direction: column;
+        left: 0;
+        width: 125px;
+        height: 745px;
+        position: relative;
+        justify-content: flex-start;
+        border: 2px solid #EB5428;
+    }   
 
 }
