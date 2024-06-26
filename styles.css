@@ -312,3 +312,77 @@ footer img {
     grid-row: 2;
     margin: auto;
 }
+
+@media screen and (min-width:760px) {
+
+    body, nav ul, menu, [src*="street-tacos"]  {
+        width: 768px;
+    }
+
+    nav ul {
+        height: 200px;
+    }
+
+    nav ul li:first-child {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        visibility: hidden;
+    }
+    
+    nav ul li:first-child + li {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: #EB5428;
+        width: 110px;
+    }
+    
+    nav ul li:last-child {
+        grid-column-start: 7;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 68px;
+    }
+
+    nav ul img {
+        width: 60px
+    }
+
+    #search {
+        grid-row: 1;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        right: 100px;
+    }
+
+    h1 {
+        text-align: left;
+        padding-top: 65px;
+    }
+
+    menu {
+        background: rgba(255, 255, 255, .7);
+        position: absolute;
+        height: 100px;
+    }
+
+    menu li {
+        padding: 15px;
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas: 
+                        "img img img"
+                        "tacos tacos tacos"
+                        "details details details"
+                        "ingredients directions directions"
+                        "sides sides sides";
+    }
+
+    
+
+}
