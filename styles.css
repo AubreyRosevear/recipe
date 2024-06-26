@@ -476,4 +476,44 @@ footer img {
         border: 2px solid #EB5428;
     }   
 
+    nav {
+        grid-template-rows: 1fr 100px;
+    }
+
+    nav ul {
+        height: 100px;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(11, 1fr);
+    }
+
+    #search {
+        grid-row: 2;
+        position: static;
+        background-color: #F2F2F2;
+        padding-top: 45px;
+    }
+
+    nav ul li:first-child {
+        grid-column: 2;
+        visibility: hidden;
+    }
+    
+    nav ul li:first-child + li {
+        grid-row: 1;
+        grid-column: 1;
+        background-color: #EB5428;
+        width: 110px;
+    }
+    
+    menu li:first-child {
+        padding-top: 45px;
+    }
+    
+    nav ul li:last-child {
+        grid-column: 11;
+        grid-row: 1;
+        width: 68px;
+    }   
+
+
 }
