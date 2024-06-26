@@ -573,4 +573,54 @@ footer img {
         grid-column-start: 3;
         grid-column-end: 5;        
     }
+    
+    #sides {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 4;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr;
+        height: 450px;
+    }
+
+    #sides h2 {
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin: auto;
+    }
+
+    #sides figure {
+        width: fit-content;
+        grid-template-areas: 
+                    "img"
+                    "figcap"
+                    "desc"
+                    "rating";
+        grid-template-columns: 250px;
+        grid-template-rows: 250px 35px 35px 35px;
+        margin: auto;
+    }
+
+    #sides figure figcaption {
+        grid-area: figcap;
+    }
+
+    #sides figure p {
+        grid-area: desc;
+    }
+
+    #sides figure dl {
+        grid-area: rating;
+    }
+
+    #sides figure dl dd {
+        display: inline;
+    }
+    
+    #sides figure dl:after {
+        display: block;
+        content: '';
+    }
 }
