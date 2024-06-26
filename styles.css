@@ -515,5 +515,62 @@ footer img {
         width: 68px;
     }   
 
+    main {
+        position: relative;
+        top: -750px;
+        grid-template-columns: 125px 125px 375px 1fr;
+        grid-template-rows: 1fr 125px 425px 450px;
+    }
 
+    [src*="street-tacos"] {
+        width: 500px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    #tacos {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    #tacos p {
+        line-height: 2;
+    }
+
+    #details {
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        background-color: #000000;
+        color: #7ABFBF;
+    }
+
+    #details h2 {
+        padding-bottom: 12px;
+    }
+
+    #details dl {
+        display: grid;
+        grid-template-rows: 25px 25px;
+    }
+    #details dt {
+        grid-row: 1;
+    }
+
+    #details dd {
+        grid-row: 2;
+        margin: 0;
+    }
+
+    #ingredients {
+        grid-row: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;        
+    }
+
+    #directions {
+        grid-row: 3;
+        grid-column-start: 3;
+        grid-column-end: 5;        
+    }
 }
