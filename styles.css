@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swapp");
 
-/*Main*/ 
+/*Main*/
 
 html {
     background-color: rgba(122, 191, 191, .5);
@@ -12,14 +12,22 @@ body {
     background-color: #F2F2F2;
 }
 
-h1, h2, h3, nav a, nav span, figcaption, menu li, #social li, footer {
+h1,
+h2,
+h3,
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
     font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
 }
 
 header {
     position: absolute;
-    top: 0;  
+    top: 0;
 }
 
 /*Nav stuff*/
@@ -61,7 +69,7 @@ nav #menuIcon {
     text-align: center;
     grid-row: 2;
     background-color: #F2F2F2;
-    display:grid;
+    display: grid;
     grid-template-rows: 1fr;
     justify-content: center;
     padding: 20px;
@@ -79,12 +87,13 @@ nav #menuIcon {
     grid-row: 1;
 }
 
-#search input, #search button {
+#search input,
+#search button {
     height: 45px;
     margin: 0;
 }
 
-nav #menuIcon:checked ~ nav ul {
+nav #menuIcon:checked~nav ul {
     height: 150px;
 }
 
@@ -124,7 +133,7 @@ nav ul li:first-child {
     grid-column-end: 3;
 }
 
-nav ul li:first-child + li {
+nav ul li:first-child+li {
     grid-column-start: 3;
     grid-column-end: 6;
     background-color: #EB5428;
@@ -153,7 +162,7 @@ menu {
     margin: auto;
     list-style: none;
     display: inline-flex;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
 menu li a {
@@ -170,11 +179,20 @@ h3 {
     font-size: 25px;
 }
 
-nav a, nav span, figcaption, menu li, #social li, footer {
+nav a,
+nav span,
+figcaption,
+menu li,
+#social li,
+footer {
     font-size: 20px;
 }
 
-p, dd, li, nav, input {
+p,
+dd,
+li,
+nav,
+input {
     font-family: "montserrat", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -238,10 +256,10 @@ main p {
     padding-left: 10px;
     margin: 25px 0;
     display: grid;
-    grid-template-areas: 
-                "a b b b"
-                "a c c c"
-                "a d d d";
+    grid-template-areas:
+        "a b b b"
+        "a c c c"
+        "a d d d";
     grid-template-columns: 100px 1fr;
     grid-template-rows: 33px 33px 33px;
     column-gap: 15px;
@@ -259,7 +277,9 @@ main p {
     grid-area: a;
 }
 
-#sides figcaption, #sides p, #sides dl {
+#sides figcaption,
+#sides p,
+#sides dl {
     margin: 0;
 }
 
@@ -287,9 +307,9 @@ main p {
     grid-row: 1;
 }
 
-#social ul li a{
+#social ul li a {
     text-align: center;
-    color:#EB5428;
+    color: #EB5428;
     transition: all .5s;
 }
 
@@ -315,7 +335,10 @@ footer img {
 
 @media screen and (min-width:760px) {
 
-    body, nav ul, menu, [src*="street-tacos"]  {
+    body,
+    nav ul,
+    menu,
+    [src*="street-tacos"] {
         width: 768px;
     }
 
@@ -328,15 +351,15 @@ footer img {
         grid-column-end: 7;
         visibility: hidden;
     }
-    
-    nav ul li:first-child + li {
+
+    nav ul li:first-child+li {
         grid-row: 1;
         grid-column-start: 1;
         grid-column-end: 2;
         background-color: #EB5428;
         width: 110px;
     }
-    
+
     nav ul li:last-child {
         grid-column-start: 7;
         grid-column-end: 8;
@@ -375,12 +398,12 @@ footer img {
 
     main {
         display: grid;
-        grid-template-areas: 
-                        "img img img"
-                        "tacos tacos tacos"
-                        "details details details"
-                        "ingredients directions directions"
-                        "sides sides sides";
+        grid-template-areas:
+            "img img img"
+            "tacos tacos tacos"
+            "details details details"
+            "ingredients directions directions"
+            "sides sides sides";
     }
 
     [src*="street-tacos"] {
@@ -447,8 +470,9 @@ footer img {
 }
 
 @media screen and (min-width:1280px) {
-    
-    body, nav ul {
+
+    body,
+    nav ul {
         width: 1280px;
     }
 
@@ -474,7 +498,7 @@ footer img {
         position: relative;
         justify-content: flex-start;
         border: 2px solid #EB5428;
-    }   
+    }
 
     nav {
         grid-template-rows: 1fr 100px;
@@ -497,23 +521,23 @@ footer img {
         grid-column: 2;
         visibility: hidden;
     }
-    
-    nav ul li:first-child + li {
+
+    nav ul li:first-child+li {
         grid-row: 1;
         grid-column: 1;
         background-color: #EB5428;
         width: 110px;
     }
-    
+
     menu li:first-child {
         padding-top: 45px;
     }
-    
+
     nav ul li:last-child {
         grid-column: 11;
         grid-row: 1;
         width: 68px;
-    }   
+    }
 
     main {
         position: relative;
@@ -553,6 +577,7 @@ footer img {
         display: grid;
         grid-template-rows: 25px 25px;
     }
+
     #details dt {
         grid-row: 1;
     }
@@ -565,15 +590,15 @@ footer img {
     #ingredients {
         grid-row: 3;
         grid-column-start: 1;
-        grid-column-end: 3;        
+        grid-column-end: 3;
     }
 
     #directions {
         grid-row: 3;
         grid-column-start: 3;
-        grid-column-end: 5;        
+        grid-column-end: 5;
     }
-    
+
     #sides {
         display: grid;
         grid-column-start: 1;
@@ -593,11 +618,11 @@ footer img {
 
     #sides figure {
         width: fit-content;
-        grid-template-areas: 
-                    "img"
-                    "figcap"
-                    "desc"
-                    "rating";
+        grid-template-areas:
+            "img"
+            "figcap"
+            "desc"
+            "rating";
         grid-template-columns: 250px;
         grid-template-rows: 250px 35px 35px 35px;
         margin: auto;
@@ -618,12 +643,12 @@ footer img {
     #sides figure dl dd {
         display: inline;
     }
-    
+
     #sides figure dl:after {
         display: block;
         content: '';
     }
-    
+
     #social {
         grid-column: 3;
         grid-row: 1;
@@ -654,6 +679,7 @@ footer img {
         grid-row: 1;
         padding-top: 25px;
         padding-left: 25px;
-        text-align: left;;
+        text-align: left;
+        ;
     }
 }
